@@ -44,7 +44,7 @@ const InnerForm = forwardRef<HTMLFormElement, FormSubmitProps>(function Form ({ 
     ev.preventDefault()
     onSubmit(form)
   }
-  return <form onSubmit={submit} ref={ref} className="flex flex-col gap-2 bg-slate-300 p-2 rounded">
+  return <form onSubmit={submit} ref={ref} className="flex flex-col gap-2 bg-slate-300 p-4 rounded">
     {children}
   </form>
 })
