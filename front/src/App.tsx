@@ -6,7 +6,10 @@ import { FormEvent } from './containers/FormEvent'
 const App =(): JSX.Element => {
 
   return (
-    <FormEvent />
+    <div className='bg-slate-100 w-full h-full block'>
+      <FormEvent />
+    </div>
+
   )
 }
 
