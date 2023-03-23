@@ -2,6 +2,7 @@ import React from 'react'
 import { Field, Form, Label, Submit, Textarea } from '../components/Form'
 
 export const FormEvent = (): JSX.Element => {
+
   return (
     <Form onSubmit={(object: any) => { console.log(object)} }>
       <Label> Titre </Label>
