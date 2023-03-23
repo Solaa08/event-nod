@@ -12,13 +12,9 @@ export const FormEvent = (): JSX.Element => {
     }
     const eventCollection = collection(db, "events")
 
-    const addEvent = async (object : EventType) => {
+    const addEvent = async (event : EventType) => {
       try {
-        await addDoc(eventCollection, {
-          title: object.title,
-          description: object.description,
-          date: object.date
-        })
+        await addDoc(eventCollection, event)
       } catch (error) {
         console.error(error)
       }
