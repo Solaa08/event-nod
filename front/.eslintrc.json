@@ -20,5 +20,9 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "indent": ["error", 2],
+        "max-len": ["error", { "ignoreUrls": true, "code": 130 }],
+        "no-multi-spaces": "error"
     }
 }
