@@ -44,11 +44,12 @@ const InnerForm = forwardRef<HTMLFormElement, FormSubmitProps>(function Form ({ 
     ev.preventDefault()
     onSubmit(form)
   }
-  return <form onSubmit={submit} ref={ref}>
+  return <form onSubmit={submit} ref={ref} className="flex flex-col gap-2 bg-slate-300 p-2 rounded">
     {children}
   </form>
 })
   
+
 export const Form = ({ children, onSubmit }: FormSubmitProps): JSX.Element => {
   const [form, setForm] = useState({})
   const ref = useRef <HTMLFormElement>(null)
@@ -63,7 +64,8 @@ export const Form = ({ children, onSubmit }: FormSubmitProps): JSX.Element => {
   
 export const Label = ({ children }: FormProps): JSX.Element => {
   return (
-    <label>{children}</label>
+    <label className="block text-left uppercase tracking-wide text-slate-900 text-xs font-bold mb-2" 
+      htmlFor="grid-first-name">{children}</label>
   )
 }
   
@@ -91,12 +93,12 @@ export const Field = ({ type, name }: FormFieldProps): JSX.Element => {
       value={value}
       onChange={(ev) => { setValue(ev.currentTarget.value) }}
       type={type}
-      name={name}
-      className="mb-2 text-sm font-medium text-gray-900 dark:text-white" />
+      className="mb-2 text-sm font-medium w-full" />
+  
   )
 }
   
-export const Submit = ({ children }: any): JSX.Element => {
-  return <input type="submit" value={children} />
+export const Submit = ({ children }: any ): JSX.Element => {
+  return <input type="submit" value={children} className="bg-green-500 text-slate-50 w-1/4  rounded" />
 }
   
