@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
+import Events from './containers/Events'
 import { FormEvent } from './containers/FormEvent'
-import Events from './containers/Events';
 
 
 const App = (): JSX.Element => {
 
   return (
-    <div className='bg-slate-100 w-full h-full block'>
+    <div>
       <FormEvent />
       <Events/>
     </div>

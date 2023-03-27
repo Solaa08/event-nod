@@ -93,12 +93,12 @@ export const Field = ({ type, name }: FormFieldProps): JSX.Element => {
       value={value}
       onChange={(ev) => { setValue(ev.currentTarget.value) }}
       type={type}
-      className="mb-2 text-sm font-medium w-full" />
+      className="mb-2 text-sm font-medium w-full" required />
   
   )
 }
   
 export const Submit = ({ children }: any ): JSX.Element => {
-  return <input type="submit" value={children} className="bg-green-500 text-slate-50 w-1/4  rounded" />
+  return <input type="submit" value={children} className="bg-green-500 text-slate-50 w-1/4  cursor-pointer" />
 }
   

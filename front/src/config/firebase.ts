@@ -4,14 +4,13 @@ import { getFirestore } from "firebase/firestore"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD_VPmr3KevRJvEBG_9RS8BMtVesH7X1Cs",
-  authDomain: "event-nod-rest-api.firebaseapp.com",
-  projectId: "event-nod-rest-api",
-  storageBucket: "event-nod-rest-api.appspot.com",
-  messagingSenderId: "207381269563",
-  appId: "1:207381269563:web:d967c57ca689f69644201e"
+  apiKey: "AIzaSyDrC7IY3tAQvjnJmZjmvOU8r4At9g06xP4",
+  authDomain: "event-nod.firebaseapp.com",
+  projectId: "event-nod",
+  storageBucket: "event-nod.appspot.com",
+  messagingSenderId: "1046713682734",
+  appId: "1:1046713682734:web:a083b9d5947a69e3a348bf"
 };
 
 // Initialize Firebase

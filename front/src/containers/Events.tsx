@@ -31,13 +31,13 @@ const Events = (): JSX.Element => {
 
   return (
     <div>
-      <div>
+      <div className='flex flex-wrap  mt-3  '>
         {events?.map((event: { id: React.Key; title: string; description: string; date: Date | any; }) => (
-          <li key={event.id}>
+          <li key={event.id} className='list-none w-1/3 mb-4 '>
             <Event 
               title={event.title} 
               description={event.description} 
-              date={moment(event.date).format('MMMM Do YYYY')}
+              date={moment(event.date).format('MMMM Do YYYY, h:mm:ss a')}
             />
           </li>
         ))}
