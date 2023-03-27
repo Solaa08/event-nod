@@ -37,7 +37,7 @@ const Events = (): JSX.Element => {
             <Event 
               title={event.title} 
               description={event.description} 
-              date={moment(event.date.toDate()).format('MMMM Do YYYY, h:mm:ss a')}
+              date={moment(event.date).format('MMMM Do YYYY')}
             />
           </li>
         ))}
