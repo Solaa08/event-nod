@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardTitle, CardSubTitle, CardBody } from '../components/Card'
 
-const Event = (props: any): JSX.Element => {
+const Event = (props: React.ReactNode | any): JSX.Element => {
 
   return (
     <Card>
